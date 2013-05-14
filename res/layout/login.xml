@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#f8f9fe"
+                android:paddingTop="70dp"
+>
+    <ImageView android:id="@+id/logo"
+               android:src="@drawable/logo"
+               android:layout_width="70dp"
+               android:layout_height="70dp"
+               android:layout_centerHorizontal="true" />
+    
+    <EditText android:id="@+id/username"
+              android:layout_marginTop="30dp"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/logo"
+              android:singleLine="true"
+              android:background="@android:drawable/editbox_background"
+              android:layout_centerInParent="true"
+              android:textColor="#000000"
+              android:hint="@string/username" />
+    <EditText android:id="@+id/password"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+              android:password="true"
+              android:layout_below="@id/username"
+              android:singleLine="true"
+              android:background="@android:drawable/editbox_background"
+              android:layout_centerInParent="true"
+              android:textColor="#000000"
+              android:hint="@string/password" />
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/button_login" 
+        android:layout_below="@id/password"
+        android:layout_alignRight="@id/password"
+        android:onClick="login" />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0000FF"
+        android:text="@string/forgot"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/password"
+        android:layout_alignLeft="@id/password"/>
+    <Button
+        android:id="@+id/emergency_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="@string/button_emergency" 
+        android:layout_below="@id/login_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="#FF0000"
+    />
+</RelativeLayout>
+

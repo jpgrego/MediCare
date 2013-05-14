@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MediCare</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="forgot"><u>Forgot?</u></string>
+    <string name="button_login">Login</string>
+    <string name="button_emergency">Emergency</string>
+    <string name="action_bar">MediCare</string>
+    <string name="footer_text">www.medicare.com</string>
+    <string name="button_myaccount">My Account</string>
+    <string name="button_medicalissue">Medical Issue</string>
+    <string name="button_appointments">Appointments</string>
+    <string name="button_about">About</string>
+</resources>

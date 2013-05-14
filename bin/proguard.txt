@@ -1,0 +1,18 @@
+# view res/layout/fragment_layout.xml #generated:2
+-keep class com.medicare.DashboardLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:8
+-keep class com.medicare.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.medicare.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.medicare.MyAccountActivity { <init>(...); }
+
+# onClick res/layout/login.xml #generated:36
+-keepclassmembers class * { *** login(...); }
+
+# onClick res/layout/fragment_layout.xml #generated:9
+-keepclassmembers class * { *** myAccount(...); }
+
