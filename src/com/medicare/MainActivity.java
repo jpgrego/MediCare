@@ -7,10 +7,8 @@ package com.medicare;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 
 /**
  *

@@ -1,11 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
->
-    <include layout="@layout/actionbar_layout"/>
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="fill_vertical"
+    android:orientation="vertical" >
 
-    <include layout="@layout/footer_layout"/>
+    <include layout="@layout/actionbar_layout" />
+
+   
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mantenha os seus dados sempre atualizados!"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Marcos Ribeiro" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="marcos.ribeiro@gmail.com"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hospital"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TwoLineListItem
+        android:id="@+id/twoLineListItem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/lvHospital"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        tools:listitem="@android:layout/simple_list_item_single_choice" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My doctor"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ListView
+        android:id="@+id/lvDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        tools:listitem="@android:layout/simple_list_item_single_choice" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/emergency_button"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:background="#FF0000"
+        android:text="@string/button_emergency" />
+
+    <include layout="@layout/footer_layout" />
 </LinearLayout>
