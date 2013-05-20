@@ -1,0 +1,36 @@
+# view AndroidManifest.xml #generated:30
+-keep class com.medicare.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.medicare.AppointmentActivity { <init>(...); }
+
+# view res/layout/fragment_layout.xml #generated:2
+-keep class com.medicare.DashboardLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.medicare.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:23
+-keep class com.medicare.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.medicare.MedicalIssueActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.medicare.MyAccountActivity { <init>(...); }
+
+# onClick res/layout/fragment_layout.xml #generated:31
+-keepclassmembers class * { *** about(...); }
+
+# onClick res/layout/fragment_layout.xml #generated:23
+-keepclassmembers class * { *** appointment(...); }
+
+# onClick res/layout/login.xml #generated:36
+-keepclassmembers class * { *** login(...); }
+
+# onClick res/layout/fragment_layout.xml #generated:16
+-keepclassmembers class * { *** medicalIssue(...); }
+
+# onClick res/layout/fragment_layout.xml #generated:9
+-keepclassmembers class * { *** myAccount(...); }
+
