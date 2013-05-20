@@ -8,15 +8,9 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AboutActivity" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="V 0.0.1"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <include
+        android:id="@+id/include1"
+        layout="@layout/actionbar_layout" />
 
     <TextView
         android:id="@+id/textView2"
@@ -45,5 +39,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
         android:text="João Grego :: 45745 " />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:text="V 0.0.1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>

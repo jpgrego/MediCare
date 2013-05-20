@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class LoginActivity extends Activity
 {
@@ -22,8 +23,10 @@ public class LoginActivity extends Activity
     // login button
     public void login(View view)
     {
+    	
         Intent intent = new Intent(this, MainActivity.class);
-//        EditText username = (EditText) findViewById(R.id.username);
+ //       EditText username = (EditText) findViewById(R.id.username);
+ //       System.out.println(username);
 //        EditText password = (EditText) findViewById(R.id.password);
 //        String username_input = username.getText().toString();
 //        String password_input = password.getText().toString();

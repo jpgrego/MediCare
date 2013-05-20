@@ -8,10 +8,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".AppointmentActivity" >
 
+    <include
+        android:id="@+id/include1"
+        layout="@layout/actionbar_layout" />
+
     <ListView
         android:id="@+id/LvAppointment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/include1"
+        android:layout_below="@+id/include1" >
 
     </ListView>
 

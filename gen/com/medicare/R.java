@@ -30,30 +30,31 @@ public final class R {
         public static final int logo=0x7f020006;
     }
     public static final class id {
-        public static final int LinearLayout1=0x7f08000f;
-        public static final int LvAppointment=0x7f080005;
-        public static final int action_settings=0x7f080017;
-        public static final int btnSave=0x7f080016;
-        public static final int btn_about=0x7f080009;
-        public static final int btn_appointments=0x7f080008;
-        public static final int btn_medical_issue=0x7f080007;
-        public static final int btn_myaccount=0x7f080006;
-        public static final int editText1=0x7f080010;
-        public static final int emergency_button=0x7f08000e;
-        public static final int login_button=0x7f08000d;
-        public static final int logo=0x7f08000a;
-        public static final int lvDoctor=0x7f080015;
-        public static final int lvHospital=0x7f080014;
-        public static final int password=0x7f08000c;
+        public static final int LinearLayout1=0x7f080010;
+        public static final int LvAppointment=0x7f080006;
+        public static final int action_settings=0x7f080018;
+        public static final int btnSave=0x7f080017;
+        public static final int btn_about=0x7f08000a;
+        public static final int btn_appointments=0x7f080009;
+        public static final int btn_medical_issue=0x7f080008;
+        public static final int btn_myaccount=0x7f080007;
+        public static final int editText1=0x7f080011;
+        public static final int emergency_button=0x7f08000f;
+        public static final int include1=0x7f080004;
+        public static final int login_button=0x7f08000e;
+        public static final int logo=0x7f08000b;
+        public static final int lvDoctor=0x7f080016;
+        public static final int lvHospital=0x7f080015;
+        public static final int password=0x7f08000d;
         public static final int textView1=0x7f080000;
         public static final int textView2=0x7f080001;
         public static final int textView3=0x7f080002;
         public static final int textView4=0x7f080003;
-        public static final int text_email=0x7f080012;
-        public static final int text_name=0x7f080011;
-        public static final int title=0x7f080004;
-        public static final int twoLineListItem2=0x7f080013;
-        public static final int username=0x7f08000b;
+        public static final int text_email=0x7f080013;
+        public static final int text_name=0x7f080012;
+        public static final int title=0x7f080005;
+        public static final int twoLineListItem2=0x7f080014;
+        public static final int username=0x7f08000c;
     }
     public static final class layout {
         public static final int about=0x7f030000;
