@@ -23,12 +23,15 @@
         android:id="@+id/btn_appointments"
         style="@style/DashboardButton"
         android:drawableTop="@drawable/btn_appointments"
-        android:text="@string/button_appointments" />
+        android:text="@string/button_appointments"
+    	android:onClick="appointment" />
+    
     
     <Button
         android:id="@+id/btn_about"
         style="@style/DashboardButton"
         android:drawableTop="@drawable/btn_about"
-        android:text="@string/button_about" />
+        android:text="@string/button_about"
+    	android:onClick="about" />
      
 </com.medicare.DashboardLayout>

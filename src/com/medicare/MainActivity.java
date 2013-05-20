@@ -30,4 +30,14 @@ public class MainActivity extends Activity {
         Intent intent = new Intent(this, MyAccountActivity.class);
         startActivity(intent);
     }
+    
+    public void about(View view) {
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
+    }
+    
+    public void appointment(View view) {
+        Intent intent = new Intent(this,AppointmentActivity.class);
+        startActivity(intent);
+    }
 }
