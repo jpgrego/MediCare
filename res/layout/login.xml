@@ -13,42 +13,34 @@
                android:layout_height="70dp"
                android:layout_centerHorizontal="true" />
     
-    <EditText android:id="@+id/username"
-              android:layout_marginTop="30dp"
-              android:layout_width="150dp"
-              android:layout_height="wrap_content"
-              android:layout_below="@id/logo"
-              android:singleLine="true"
-              android:background="@android:drawable/editbox_background"
-              android:layout_centerInParent="true"
-              android:textColor="#000000"
-              android:hint="@string/username" />
-    <EditText android:id="@+id/password"
-              android:layout_width="150dp"
-              android:layout_height="wrap_content"
-              android:password="true"
-              android:layout_below="@id/username"
-              android:singleLine="true"
-              android:background="@android:drawable/editbox_background"
-              android:layout_centerInParent="true"
-              android:textColor="#000000"
-              android:hint="@string/password" />
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:text="@string/button_login" 
-        android:layout_below="@id/password"
-        android:layout_alignRight="@id/password"
-        android:onClick="login" />
-    <TextView 
-        android:layout_width="fill_parent"
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:textColor="#0000FF"
-        android:text="@string/forgot"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/password"
-        android:layout_alignLeft="@id/password"/>
+        android:layout_alignLeft="@+id/btnForgot"
+        android:layout_alignRight="@+id/login_button"
+        android:layout_below="@id/logo"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/username"
+        android:singleLine="true"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnForgot"
+        android:layout_alignRight="@+id/username"
+        android:layout_below="@id/username"
+        android:layout_centerVertical="true"
+        android:background="@android:drawable/editbox_background"
+        android:hint="@string/password"
+        android:password="true"
+        android:singleLine="true"
+        android:textColor="#000000" />
+
     <Button
         android:id="@+id/emergency_button"
         android:layout_width="150dp"
@@ -59,5 +51,24 @@
         android:layout_marginTop="120dp"
         android:background="#FF0000"
     />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/password"
+        android:layout_toRightOf="@+id/emergency_button"
+        android:onClick="login"
+        android:text="@string/button_login" />
+
+    <Button
+        android:id="@+id/btnForgot"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_above="@+id/emergency_button"
+        android:layout_toLeftOf="@+id/logo"
+        android:onClick="forgot"
+        android:text="Forgot pass" />
+
 </RelativeLayout>
 

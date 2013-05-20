@@ -34,4 +34,11 @@ public class LoginActivity extends Activity
 //        intent.putExtra(PASSWORD_INPUT, password_input);
         startActivity(intent);
     }
+    
+    // forgot button
+    public void forgot(View view)
+    {    	
+        Intent intent = new Intent(this, ForgotActivity.class);
+        startActivity(intent);
+    }
 }   

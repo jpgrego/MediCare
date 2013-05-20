@@ -48,6 +48,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.medicare.MainActivity" />
         </activity>
+        <activity
+            android:name="com.medicare.ForgotActivity"
+            android:label="@string/title_activity_forgot"
+            android:parentActivityName="com.medicare.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.medicare.LoginActivity" />
+        </activity>
     </application>
 
 </manifest>
