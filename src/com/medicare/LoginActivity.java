@@ -6,27 +6,26 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-public class LoginActivity extends Activity
-{
-    
+public class LoginActivity extends Activity {
+
     public final static String USERNAME_INPUT = "com.medicare.USERNAME";
     public final static String PASSWORD_INPUT = "com.medicare.PASSWORD";
-    
-    /** Called when the activity is first created. */
+
+    /**
+     * Called when the activity is first created.
+     */
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
     }
-    
+
     // login button
-    public void login(View view)
-    {
-    	
+    public void login(View view) {
+
         Intent intent = new Intent(this, MainActivity.class);
- //       EditText username = (EditText) findViewById(R.id.username);
- //       System.out.println(username);
+        //       EditText username = (EditText) findViewById(R.id.username);
+        //       System.out.println(username);
 //        EditText password = (EditText) findViewById(R.id.password);
 //        String username_input = username.getText().toString();
 //        String password_input = password.getText().toString();
@@ -34,11 +33,10 @@ public class LoginActivity extends Activity
 //        intent.putExtra(PASSWORD_INPUT, password_input);
         startActivity(intent);
     }
-    
+
     // forgot button
-    public void forgot(View view)
-    {    	
+    public void forgot(View view) {
         Intent intent = new Intent(this, ForgotActivity.class);
         startActivity(intent);
     }
-}   
+}

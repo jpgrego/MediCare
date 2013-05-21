@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:background="#f8f9fe" 
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#f8f9fe" 
 >
     <include layout="@layout/actionbar_layout"/>
     
-    <TextView
-        android:id="@+id/select_hospital" 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select your hospital" />
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        
+        <TextView
+            android:id="@+id/select_hospital" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your hospital" 
+            android:textSize="30dp" />
     
-    <Spinner
-        android:id="@+id/hospital_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/hospital_array"
-        android:prompt="@string/hospital_prompt"
+        <Spinner
+            android:id="@+id/hospital_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/hospital_array"
+            android:prompt="@string/hospital_prompt"
         />
-      
+        
+        <Button
+            android:id="@+id/medissnext"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:onClick="medicalIssue2"
+            android:text="Next"  />
+
+    </LinearLayout>
     
     <include layout="@layout/footer_layout"/>
 </LinearLayout>

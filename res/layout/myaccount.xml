@@ -1,106 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/LinearLayout1"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="fill_vertical"
-    android:orientation="vertical" >
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/LinearLayout1"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical" 
+              android:background="#f8f9fe" >
 
     <include layout="@layout/actionbar_layout" />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+       
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        
 
-   
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#191947"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Mantenha os seus dados sempre atualizados!"
-        android:inputType="textMultiLine" />
+            <EditText
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Insert your name" >
+            </EditText>
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail"
+                 android:textColor="#191947"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
-        android:id="@+id/text_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Marcos Ribeiro" >
+            <EditText
+                android:id="@+id/text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Insert your e-mail"
+                android:inputType="textPersonName" />
 
-        <requestFocus />
-    </EditText>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Default hospital"
+                 android:textColor="#191947"
+                android:textAppearance="?android:attr/textAppearanceLarge" 
+                android:layout_marginTop="10dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="E-Mail"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+            <Spinner
+                android:id="@+id/hospital_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/hospital_array"
+                android:prompt="@string/hospital_prompt" />
 
-    <EditText
-        android:id="@+id/text_email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="marcos.ribeiro@gmail.com"
-        android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My doctor"
+                 android:textColor="#191947"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hospital"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+            <Spinner
+                android:id="@+id/doctor_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/doctor_array"
+                android:prompt="@string/doctor_prompt" />
 
-    <TwoLineListItem
-        android:id="@+id/twoLineListItem2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Save" />
 
-    <ListView
-        android:id="@+id/lvHospital"
-        android:layout_width="match_parent"
-        android:layout_height="144dp"
-        tools:listitem="@android:layout/simple_list_item_single_choice" >
-
-    </ListView>
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My doctor"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <ListView
-        android:id="@+id/lvDoctor"
-        android:layout_width="match_parent"
-        android:layout_height="146dp"
-        tools:listitem="@android:layout/simple_list_item_single_choice" >
-
-    </ListView>
-
-    <Button
-        android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Save" />
-
-    <Button
-        android:id="@+id/emergency_button"
-        android:layout_width="150dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="120dp"
-        android:background="#FF0000"
-        android:text="@string/button_emergency" />
+        </LinearLayout>
+        
+    </ScrollView>
 
     <include layout="@layout/footer_layout" />
 </LinearLayout>
