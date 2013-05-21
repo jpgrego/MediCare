@@ -17,6 +17,17 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_appointment">AppointmentActivity</string>
+<<<<<<< Updated upstream
     <string name="title_activity_forgot">Forgot Password</string>
+=======
+    
+    <string name="hospital_prompt">Choose your hospital</string>
+    
+    <string-array name="hospital_array">
+        <item>Hospital 1</item>
+        <item>Hospital 2</item>
+        <item>Hospital 3</item>
+    </string-array>
+>>>>>>> Stashed changes
 
 </resources>
