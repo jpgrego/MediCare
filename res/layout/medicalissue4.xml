@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#f8f9fe" 
+>
+    <include layout="@layout/actionbar_layout"/>
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+        
+        <TextView
+            android:id="@+id/scheduleTitle" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule" 
+            android:textSize="30dp" />
+        
+        <RadioGroup 
+            android:id="@+id/radioChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        
+            <RadioButton 
+                android:id="@+id/radioUrgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urgent" 
+                android:textColor="#00002d"
+                android:checked="true" />
+            
+            <RadioButton
+                android:id="@+id/radioDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#00002d" 
+                android:checked="true"
+            />
+                
+        </RadioGroup>
+    
+        <Button 
+            android:id="@+id/change_button_id" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="36dp" 
+            android:layout_width="wrap_content" 
+            android:text="Select date" />
+       
+    </LinearLayout>
+      
+    <Button
+        android:id="@+id/mediss3button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:onClick="backToMain"
+        android:text="Submit" />
+    
+    <include layout="@layout/footer_layout"/>
+</LinearLayout>

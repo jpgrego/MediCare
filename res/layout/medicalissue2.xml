@@ -18,41 +18,23 @@
             android:id="@+id/select_hospital" 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Select your hospital" 
+            android:text="Select body part" 
             android:textSize="30dp" />
     
-        
-        <Spinner
-            android:id="@+id/hospital_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/hospital_array"
-            android:prompt="@string/hospital_prompt"
-        />
-        
-        <TextView 
-            android:id="@+id/display_id" 
+        <ListView    
+            android:layout_width="fill_parent" 
             android:layout_height="wrap_content" 
-            android:layout_width="wrap_content" 
-            android:text="Select your doctor" 
-            android:textSize="30dp" 
-            android:layout_marginTop="20dp"/>    
-        
-        <Spinner
-            android:id="@+id/doctor_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/doctor_array"
-            android:prompt="@string/doctor_prompt" />
-
+            android:id="@+id/mediss2listView"
+        />
+       
     </LinearLayout>
-    
+      
     <Button
-        android:id="@+id/medissnext"
+        android:id="@+id/mediss2button"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:onClick="medicalIssue2"
-        android:text="Next"  />
+        android:onClick="medicalIssue3"
+        android:text="Next" />
     
     <include layout="@layout/footer_layout"/>
 </LinearLayout>
