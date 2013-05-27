@@ -2,6 +2,7 @@ package com.medicare;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -37,6 +38,12 @@ public class LoginActivity extends Activity {
     // forgot button
     public void forgot(View view) {
         Intent intent = new Intent(this, ForgotActivity.class);
+        startActivity(intent);
+    }
+    
+    public void emergency(View view) {
+        Uri number = Uri.parse("tel:112");
+        Intent intent = new Intent(Intent.ACTION_CALL, number);
         startActivity(intent);
     }
 }

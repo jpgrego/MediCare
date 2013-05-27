@@ -58,7 +58,7 @@
         android:id="@+id/mediss3button"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:onClick="backToMain"
+        android:onClick="confirmation"
         android:text="Submit" />
     
     <include layout="@layout/footer_layout"/>

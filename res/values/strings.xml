@@ -12,7 +12,7 @@
     <string name="action_bar">MediCare</string>
     <string name="footer_text">www.medicare.com</string>
     <string name="button_myaccount">My Account</string>
-    <string name="button_medicalissue">Medical Issue</string>
+    <string name="button_medicalissue">Schedule</string>
     <string name="button_appointments">Appointments</string>
     <string name="button_about">About</string>
     <string name="title_activity_about">AboutActivity</string>

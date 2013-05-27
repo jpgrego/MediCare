@@ -61,8 +61,8 @@ public class MedicalIssueActivity4 extends Activity {
 
     }
     
-    public void backToMain(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
+    public void confirmation(View view) {
+        Intent intent = new Intent(this, ConfirmationActivity.class);
         startActivity(intent);
     }
     
